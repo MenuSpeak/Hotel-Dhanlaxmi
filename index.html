@@ -6,6 +6,30 @@
   <title>Hotel Dhanlaxmi - Menu with Cart</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
   <style>
+
+    body {
+  margin: 0;
+  min-height: 100vh;
+  color: #e8e6e3;
+  font-family: var(--ff-ui);
+  -webkit-font-smoothing: antialiased;
+  padding: 32px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 0;
+}
+
+/* Background image with opacity */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: url("img/bg.jpeg") center/cover no-repeat;
+  opacity: 0.1;
+  z-index: -1; /* behind everything */
+}
+
     :root{
       --bg:#0b0b0d;
       --surface:#0f1114;
@@ -601,7 +625,7 @@
         return;
       }
       
-      const phoneNumber = "917768886611"; // Replace with your WhatsApp business number
+      const phoneNumber = "919284969878"; // Replace with your WhatsApp business number
       const message = generateWhatsAppMessage();
       window.open(`https://wa.me/${phoneNumber}?text=${message}`, '_blank');
     });
