@@ -12,6 +12,75 @@
 
 
 <style>
+
+/* Header */
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 24px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.search-bar input {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px 16px;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+/* Categories grid */
+.categories {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 12px;
+  padding: 20px 24px;
+}
+
+/* Button style */
+.cat {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 999px;
+  background: #ffffff;
+  box-shadow: 0 6px 18px rgba(18,24,33,0.06);
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: #111827;
+  cursor: pointer;
+  transition: transform .14s ease, box-shadow .14s ease, background-color .14s ease, color .14s ease;
+}
+
+.cat:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 26px rgba(18,24,33,0.08);
+}
+
+.cat.active {
+  background: #b9885e;
+  color: #fff;
+  box-shadow: none;
+  transform: none;
+}
+
+/* Menu Info section */
+.menu-info {
+  padding: 24px;
+  background: #f9f9f9;
+  border-top: 1px solid #eee;
+}
+
+
+
+  
     body {
       margin: 0;
       min-height: 100vh;
