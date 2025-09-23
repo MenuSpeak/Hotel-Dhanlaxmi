@@ -103,6 +103,22 @@
 
 
 
+.tabs-container {
+  display: flex;
+  flex-direction: row;   /* horizontal */
+  gap: 12px;
+  flex-wrap: nowrap;     /* line break na ho */
+  overflow-x: auto;      /* agar zyada buttons ho to horizontal scroll */
+  overflow-y: hidden;
+  padding: 8px 4px;
+  background: transparent; /* glass remove for clean look, chahe to rakho */
+  border-radius: 0;
+  border: none;
+  scrollbar-width: none; /* Firefox me scrollbar hide */
+}
+.tabs-container::-webkit-scrollbar {
+  display: none; /* Chrome/Safari me scrollbar hide */
+}
 
 
 
