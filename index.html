@@ -12,7 +12,8 @@
 
 
 <style>
-/* Card wrapper */
+
+  /* Card wrapper */
 .tab-card {
   background: #fff;
   padding: 20px;
@@ -24,7 +25,7 @@
 /* Grid layout for tabs */
 .tabs-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 tabs per row */
+  grid-template-columns: repeat(3, 1fr); /* desktop = 3 per row */
   gap: 12px;
 }
 
@@ -40,6 +41,7 @@
   box-shadow: 0 4px 10px rgba(0,0,0,0.08);
   cursor: pointer;
   transition: all 0.25s ease;
+  white-space: nowrap;
 }
 
 .tab:hover {
@@ -53,6 +55,23 @@
   font-weight: 600;
   box-shadow: 0 6px 16px rgba(212,175,55,0.3);
 }
+
+/* 📱 Responsive breakpoints */
+
+/* Tablet: 2 per row */
+@media (max-width: 768px) {
+  .tabs-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile: 1 per row */
+@media (max-width: 480px) {
+  .tabs-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 
   /* Tabs wrapper horizontal scroll ke saath */
 .tabs-container {
