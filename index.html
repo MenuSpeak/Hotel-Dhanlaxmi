@@ -78,6 +78,60 @@
   border-top: 1px solid #eee;
 }
 
+  /* Common tab style */
+.tab, .cat {
+  padding: 12px 22px;
+  border-radius: 999px;
+  border: none;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+/* Default (inactive) look */
+.tab, .cat {
+  background: #fff;
+  color: #333;
+}
+
+/* Hover effect */
+.tab:hover, .cat:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+}
+
+/* Active/Selected tab */
+.tab.active, .cat.active {
+  background: linear-gradient(90deg, #d4af37, #ffcc66); /* golden gradient */
+  color: #0b0b0d;
+  box-shadow: 0 8px 24px rgba(212,175,55,0.35);
+}
+
+/* Optional: individual colors for variety */
+.cat[data-cat="pizza"] {
+  background: #ffe5e5;
+  color: #b91c1c;
+}
+.cat[data-cat="paratha"] {
+  background: #fff7e6;
+  color: #b45309;
+}
+.cat[data-cat="chinese"] {
+  background: #e6f7ff;
+  color: #0369a1;
+}
+.cat[data-cat="non-veg"] {
+  background: #fde2e2;
+  color: #991b1b;
+}
+.cat[data-cat="veg"] {
+  background: #e6f9ed;
+  color: #166534;
+}
+
+
 
 
   
